@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Варианты дизайна лендинга</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <h1>БЫСТРЫЕ & ЛЕГКИЕ САЙТЫ</h1>
+        
+        <h2>Варианты дизайна</h2>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('minimal')">Минимализм</button>
+            <button class="tab-button" onclick="openTab('premium')">Премиум</button>
+            <button class="tab-button" onclick="openTab('dynamic')">Динамичный</button>
+        </div>
+        
+        <div id="minimal" class="tab-content" style="display:block;">
+            <div class="design-card">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Минималистичный дизайн">
+                <h3>Минимализм</h3>
+                <p>Чистый и лаконичный дизайн для тех, кто ценит простоту и функциональность. Идеально подходит для быстрого запуска и высокой конверсии.</p>
+                <ul>
+                    <li>Включает блоки 1-4 (Шапка, Изображение, Акция, Триггеры доверия)</li>
+                    <li>Фокус на конверсию без лишних элементов</li>
+                    <li>Быстрая загрузка и отличная производительность</li>
+                    <li>Полностью адаптивный дизайн</li>
+                </ul>
+                <div class="price">10 000 руб.</div>
+                <a href="#contact" class="order-button">Хочу такой сайт</a>
+            </div>
+        </div>
+        
+        <div id="premium" class="tab-content">
+            <div class="design-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Премиум дизайн">
+                <h3>Премиум</h3>
+                <p>Элегантное решение для бизнеса, который хочет подчеркнуть свой статус. Сочетание стиля и функциональности.</p>
+                <ul>
+                    <li>Включает блоки 1-6, 10 (Шапка, Изображение, Акция, Триггеры, Отзывы, Кнопка, Преимущества)</li>
+                    <li>Плавные анимации и эффекты при скроллинге</li>
+                    <li>Премиальная типографика и тщательная проработка деталей</li>
+                    <li>Индивидуальные иконки и элементы дизайна</li>
+                </ul>
+                <div class="price">18 000 руб.</div>
+                <a href="#contact" class="order-button">Хочу такой сайт</a>
+            </div>
+        </div>
+        
+        <div id="dynamic" class="tab-content">
+            <div class="design-card">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Динамичный дизайн">
+                <h3>Динамичный</h3>
+                <p>Современный интерактивный дизайн для привлечения внимания. Максимальная вовлеченность посетителей.</p>
+                <ul>
+                    <li>Включает блоки 1-10 (Все основные блоки из КП)</li>
+                    <li>Интерактивные элементы и нестандартные решения</li>
+                    <li>Параллакс-эффекты и динамический фон</li>
+                    <li>Возможность добавления видео-фона</li>
+                </ul>
+                <div class="price">24 000 руб.</div>
+                <a href="#contact" class="order-button">Хочу такой сайт</a>
+            </div>
+        </div>
+        
+        <h2>Что входит в каждый вариант</h2>
+        
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Шапка сайта</button>
+                <div class="accordion-content">
+                    <p>Блок с логотипом компании и контактной информацией. Первое, что видит посетитель, поэтому мы делаем его запоминающимся и удобным для пользователя.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Изображение</button>
+                <div class="accordion-content">
+                    <p>Картинка или слайд-шоу ваших товаров/услуг. Мы подбираем качественные изображения, которые лучше всего представляют ваш бизнес.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Акция и дедлайн</button>
+                <div class="accordion-content">
+                    <p>Акция, скидка, подарок с ограниченным сроком действия для повышения конверсии. Таймер обратного отсчета создает ощущение срочности.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Триггеры доверия</button>
+                <div class="accordion-content">
+                    <p>Сертификаты, успешные примеры проектов, именитые клиенты/партнеры. Эти элементы повышают доверие к вашему бизнесу.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Отзывы</button>
+                <div class="accordion-content">
+                    <p>Отзывы и благодарственные письма довольных клиентов. Реальные истории успеха помогают убедить новых клиентов.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Призыв к действию</button>
+                <div class="accordion-content">
+                    <p>Точный краткий заголовок и выделяющаяся кнопка, побуждающие посетителя совершить целевое действие.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Форма заявки</button>
+                <div class="accordion-content">
+                    <p>Удобная форма для сбора контактов потенциальных клиентов. Минимальное количество полей для максимальной конверсии.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Преимущества</button>
+                <div class="accordion-content">
+                    <p>Краткое, но емкое описание преимуществ компании, выделяющих ее среди конкурентов. Обычно оформляется в виде иконок с текстом.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">Схема работы</button>
+                <div class="accordion-content">
+                    <p>Блок, наглядно демонстрирующий схему работы компании. Показывает клиенту простоту и прозрачность процесса.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-block" id="contact">
+            <h3>Готовы обсудить ваш проект?</h3>
+            <p>Стоимость ориентировочная, для полного расчёта необходимы детали. Предлагаем вам встретиться или созвониться с нами для уточнения ваших желаний.</p>
+            <a href="tel:+79999999999" class="contact-button">Позвонить нам</a>
+            <p>Или напишите нам на <a href="mailto:info@example.com">info@example.com</a></p>
+            <address>Россия, МО, г. Мытищи, ул. Матросова 10/10, офис 06.</address>
+        </div>
+        <script src="/main.js"></script>    
+</body>
+</html>
